@@ -1,0 +1,55 @@
+/*anatomia de las regals css*/
+/*
+selector {
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+
+  }
+  */
+  body {
+    font-family: Arial;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+    background-color: pink;
+    text-align:justify;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: Tahoma;
+    color: #666;
+    text-decoration: underline;
+    text-align: center;
+  }
+  h2 {
+    font-size:21px;
+  }
+  a {
+    color:#ffffff;
+    background:#000;
+    text-decoration:none;
+    font-family:Helvetica, Arial, open Sans, sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  a:hover{
+     color:orange;
+     background-color: lightblue;
+
+  }
+p{
+  line-height: 150%;
+}
+#photo-linus {
+  display: block;
+  margin: 0 auto 0 auto;
+  border-top: solid 5px white;
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+  border-bottom: solid 25px white;
+}
+
+.
