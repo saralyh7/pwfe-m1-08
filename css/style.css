@@ -1,0 +1,39 @@
+body{
+  font-family:"Arial";
+  font-size: 14px;
+  margin: 0;
+  }
+
+  header {
+    background-color: #9F9F9F;
+    overflow: hidden;
+    padding: 15px;
+  }
+  header h1 {
+  margin: 0;
+  color: #111;
+  float:left;
+  background-image:url("../dx-logo-new.jpg");
+  padding-left: 75px
+  }
+  a {
+    text-decoration: none;
+    color: #000000
+
+  }
+ header ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ header a {
+   color: #d9d9d9;
+   display: block;
+   padding: 10px
+ }
+ header ul li{
+   display: inline;
+ }
+ header nav{
+  float: right;
+}
