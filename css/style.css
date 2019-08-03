@@ -15,15 +15,19 @@ header h1 {
   float: left;
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
-  padding-left: 75px;
+  background-size: contain;
+  padding-left: 60px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 26px: 
 }
 a {
   text-decoration: none;
   color: #000000;
 }
 header a {
-  color: #D9D9D9;
-  display: block;
+ display: block;
   padding: 10px;
 }
 header a:hover {
@@ -50,8 +54,7 @@ img {
   overflow: hidden;
   background-color: green
   position: relative;
-  animation:15s slider: infinitive;
-
+  animation:15s; 
   }
   #noticias-destacadas figure{
     width: 100vw;
@@ -75,7 +78,6 @@ img {
   }
   40% {
     left: -100vw;
-
   }
   60% {
     left: -100vw;
