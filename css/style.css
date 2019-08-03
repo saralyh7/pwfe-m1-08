@@ -1,39 +1,53 @@
-body{
-  font-family:"Arial";
+body {
+  font-family: "Arial";
   font-size: 14px;
   margin: 0;
-  }
-
-  header {
-    background-color: #9F9F9F;
-    overflow: hidden;
-    padding: 15px;
-  }
-  header h1 {
+}
+header {
+  background-color: #171717;
+  overflow: hidden;
+  padding: 15px;
+}
+header h1 {
   margin: 0;
-  color: #111;
-  float:left;
-  background-image:url("../dx-logo-new.jpg");
-  padding-left: 75px
-  }
-  a {
-    text-decoration: none;
-    color: #000000
-
-  }
- header ul{
-   margin: 0;
-   padding: 0;
-   list-style: none;
- }
- header a {
-   color: #d9d9d9;
-   display: block;
-   padding: 10px
- }
- header ul li{
-   display: inline;
- }
- header nav{
+  color: #D9D9D9;
+  float: left;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  padding-left: 75px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+header a {
+  color: #D9D9D9;
+  display: block;
+  padding: 10px;
+}
+header a:hover {
+  background-color: #D9D9D9;
+  color: #171717;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+}
+header nav {
   float: right;
+}
+img {
+  display: block;
+  width: 100%;
+}
+#noticias-destacadas h2 {
+  font-size: 42px;
+  font-weight: 600;
+  background-color: #171717;
+  padding: 15px;
+  color: #FFF;
 }
