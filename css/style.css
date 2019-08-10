@@ -2,63 +2,86 @@ body {
   font-family: "Arial";
   font-size: 14px;
   margin: 0;
+  text-decoration: none;
   overflow-x: hidden;
 }
+
+a {
+  text-decoration: none;
+  color: #dfdedf;
+  font-size: 15px;
+}
+
 header {
-  background-color: #171717;
+  background-color: #18181f;
+  color: white;
   overflow: hidden;
   padding: 15px;
 }
-header h1 {
+
+header a {
+  color: #dfdedf;
+  display: block;
+  padding: 10px;
+}
+
+header a:hover {
+  background-color: #dfdedf;
+  color: #18181f;
+}
+
+header nav{
+  float: right;
+}
+
+header h1{
   margin: 0;
-  color: #D9D9D9;
   float: left;
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  padding-left: 60px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  padding-left: 75px;
   font-weight: 700;
-  font-size: 26px: 
+  font-size: 32px;
 }
-a {
-  text-decoration: none;
-  color: #000000;
-}
-header a {
- display: block;
-  padding: 10px;
-}
-header a:hover {
-  background-color: #D9D9D9;
-  color: #171717;
-}
-header ul {
+
+h1 {
   margin: 0;
-  padding: 0;width: 
-  list-style: none;
+  color: #dfdedf;
 }
-header ul li {
+
+header ul {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+  padding-inline-start: 0;
+}
+
+header ul li{
   display: inline-block;
 }
-header nav {
-  float: right;
+
+footer {
+  background-color: #282828;
+  color: white;
 }
+
 img {
   display: block;
   width: 100%;
 }
-#noticias-destacadas{ 
-  width: calc(100vw * 3);
-  overflow: hidden;
-  background-color: green
-  position: relative;
-  animation:15s; 
-  }
-  #noticias-destacadas figure{
-    width: 100vw;
-    float:left;
+
+#noticias-destacadas {
+    width: calc(100vw * 3);
+    background-color: #171717;
+    overflow: hidden;
+    position: relative;
+    animation: 15s slider infinite;
+}
+
+#noticias-destacadas figure{
+  width: 100vw;
+  float: left;
 }
 
 #noticias-destacadas h2 {
@@ -66,11 +89,13 @@ img {
   font-weight: 600;
   background-color: #171717;
   padding: 15px;
-  color: #FFF;
+  color: #FFF
 }
+
 /*Animaciones CSS*/
-@keyframes slider{
-0%{
+
+@keyframes slider {
+  0% {
     left: 0;
   }
   20% {
@@ -82,11 +107,49 @@ img {
   60% {
     left: -100vw;
   }
-  80%{
-    left:-200vw;
+  80% {
+    left: -200vw;
   }
-  100%{
-    left:-200
+  96% {
+    left: -200vw;
   }
+  100% {
+    left: 0vw;
+  }
+}
 
-  
+
+.noticia { /*contenedor flexible*/
+display: flex;
+flex-direction: row; /*indica a los ihijos en que direccion despalzarse. Se asume el row, pero puede ser en columnas tambien*/
+justify-content: space-evenly; /*ver más en https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+align-items: center;
+border-bottom: solid 1px #CCCCCC;
+margin-left: 15px;
+margin-right: 15px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.noticia:last-child {
+border: none;
+}
+
+/*nth-of-type  LEER en el manual de CSS */
+
+.noticia-img {/*item flexible*/
+  width: 25%;
+}
+
+.noticia-texto {/*item flexible*/
+  width: 65%;
+  line-height: 1.5;
+
+
+}
+
+.noticia h3 {
+    font-size: 25px;
+    font-weight: 600;
+
+}
