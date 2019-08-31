@@ -40,7 +40,44 @@
 		</aside>
 
 		<script>
-		
+			/*tipos primitivos
+			//Origen 1: Datos Determinados
+
+
+			var nombre= "Cafe"  //<-- string
+			var Stock= 600      //<-- int (integer)
+			var Precio= 95.65   //<-- float
+			var disponible=true //<-- boot
+
+			//O rigen 2: datos indeterminados
+			var precioFinal =precio* 1.21 //... determinable luego de una operacion logico/matematica*/
+
+			var nombre = prompt("ingrese nombre:")
+			var stock = prompt("ingrese stock:")
+			var precio = prompt("ingrese precios:")
+			var disponible = confirm("esta disponible para la venta?")
+
+			while(nombre == "" ||nombre== null || nombre==undefined){
+				alert("ERROR= el nombre no puede quedar vacio -:-")
+				nombre = prompt("reingrese nombre:")
+			}
+
+            if(stock == "" ||stock<=0 || stock>1000){
+				alert("ERROR= ingrese stock entre 1 y 1000 unid")
+			}
+
+			if(precio == "" || precio<0){
+				alert("ERROR= ingrese precio mayor o igual a cero")}
+
+			if (disponible== undefined){
+					alert("ERROR: indique si esta disponible para la venta")
+				}
+
+				//var mensaje ="Hay "+ stock +" unid. de " + nombre +"que valen ARG "+precio+" c/u" 
+				var mensaje = ` HAY ${stock} unid. de <strong> ${nombre} </strong>que valen ARG ${precio} c/u `
+				console.log(mensaje)
+
+				document.querySelector("article"). innerHTML = mensaje
 		</script>
 	</body>
 </html>
