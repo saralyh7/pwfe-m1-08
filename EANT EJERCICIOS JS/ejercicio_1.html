@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+0<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -29,8 +29,24 @@
 
 		<script>
 			/* 1) Seleccionar el h1 y guardarlo en una variable */
+			var titulo = document.querySelector("h1")
+
+			
+			/*manipulacion de comportamiento*/
+			titulo.onclick= modificarTitulo
+			setTimeout(modificarTitulo)
+			function modificarTitulo(){
+				/*Manipulacion de contenido*/
 
 			/* 2) Modificar el texto interno de esta variable */
+			titulo.innerText = "hola desde un script de js"
+
+			/*manipulacion de estructuras*/
+			titulo.style.color= "green"
+			titulo.classList.add ("alerta")
+			titulo.id= "alto-titulo"
+
+			}
 
 			/* 3) Una vez que funcione, probar poniendo el <script> en el <head> para corroborar que JavaScript se ejecuta secuencialmente! */
 		</script>
