@@ -1,193 +1,194 @@
+:root {
+  font-size: 62.5%;
+}
 body {
-  font-family: "Arial";
-  font-size: 14px;
-  margin: 0;
-  text-decoration: none;
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 1.4rem;
+	color: #333333;
   overflow-x: hidden;
 }
-
-a {
-  text-decoration: none;
-  color: #dfdedf;
-  font-size: 15px;
-}
-
 header {
-  background-color: #18181f;
-  color: white;
-  overflow: hidden;
-  padding: 15px;
+	background-color: #333333;
+	padding: 1.5rem;
+	overflow: hidden;
 }
-
-header a {
-  color: #dfdedf;
-  display: block;
-  padding: 10px;
-}
-
-header a:hover {
-  background-color: #dfdedf;
-  color: #18181f;
-}
-
-header nav{
-  float: right;
-}
-
-header h1{
-  margin: 0;
-  float: left;
-  background-image: url("../img/logo.png");
-  background-repeat: no-repeat;
+header h1 {
+  font-size: 2.6rem;
+	color: #FFFFFF;
+	float: left;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
   background-size: contain;
-  padding-left: 75px;
+	padding-left: 6.5rem;
   font-weight: 700;
-  font-size: 32px;
 }
-
-h1 {
-  margin: 0;
-  color: #dfdedf;
+header a {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .5rem;
+	display: block;
 }
-
-header ul {
-  list-style-type: none;
-  margin: none;
-  padding: none;
-  padding-inline-start: 0;
+header a:hover {
+	background-color: #FFFFFF;
+	color: #333333;
 }
-
-header ul li{
-  display: inline-block;
+nav {
+	float: right;
 }
-
-footer {
-  background-color: #282828;
-  color: white;
+nav ul li {
+	display: inline-block;
 }
-
 img {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
-
 #noticias-destacadas {
-    width: calc(100vw * 3);
-    background-color: #171717;
-    overflow: hidden;
-    position: relative;
-    animation: 15s slider infinite;
+  width: calc(100vw * 3);
+  overflow: hidden;
+  animation: 15s slider infinite;
+  position: relative;
 }
-
-#noticias-destacadas figure{
-  width: 100vw;
+#noticias-destacadas figure {
   float: left;
+  position: relative;
+  width: 100vw;
 }
-
+#noticias-destacadas figcaption { /* <-- busca al elemento con id="noticias-destacadas" */
+	background-color: #333333;
+	padding: 1.5rem;
+}
 #noticias-destacadas h2 {
-  font-size: 42px;
-  font-weight: 600;
-  background-color: #171717;
-  padding: 15px;
-  color: #FFF
+	color: #FFFFFF;
+	font-size: 3.2rem;
+	font-weight: 700;
 }
-
-/*Animaciones CSS*/
-
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  40% {
-    left: -100vw;
-  }
-  60% {
-    left: -100vw;
-  }
-  80% {
-    left: -200vw;
-  }
-  96% {
-    left: -200vw;
-  }
-  100% {
-    left: 0vw;
-  }
+.noticia {
+	border-bottom: solid 1px #D9D9D9;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1rem;
 }
-
-
-.noticia { /*contenedor flexible*/
-display: flex;
-flex-direction: row; /*indica a los ihijos en que direccion despalzarse. Se asume el row, pero puede ser en columnas tambien*/
-justify-content: space-evenly; /*ver más en https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
-align-items: center;
-border-bottom: solid 1px #CCCCCC;
-margin-left: 15px;
-margin-right: 15px;
-padding-top: 15px;
-padding-bottom: 15px;
-}
-
 .noticia:last-child {
-border: none;
+	border: none;
 }
-
-/*nth-of-type  LEER en el manual de CSS */
-
-.noticia-img {/*item flexible*/
-  width: 25%;
+.noticia-img {
+	width: 30%;
 }
-
-.noticia-texto {/*item flexible*/
-  width: 65%;
-  line-height: 1.5;
-
-
+.noticia-txt {
+	width: 65%
 }
-
-.noticia h3 {
-    font-size: 25px;
-    font-weight: 600;
-
+.noticia-txt h3 {
+	font-weight: 700;
+	font-size: 2.8rem;
 }
-.noticia-txt a{
-
+.noticia-txt a {
+	text-decoration: none;
+	color: #000;
 }
-#tabla-posiciones table {
-  border: solid 1px darkred;
-  width: 60%;
-  margin: auto;
+.noticia-txt p {
+	font-size: 16px;
+}
+.noticia-txt h3,
+.noticia-txt p {
+	line-height: 1.5;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 #tabla-posiciones td,
-#tabla-posiciones th{
-  padding: 10px;
-  vertical-align: middle;
+#tabla-posiciones th {
+	padding: 1.2rem;
 }
-#tabla-posiciones th{
-  background-color: darkred;
-  color:#fff;
-  font-weight: 700;
-  font-size: 16px;
+#tabla-posiciones th {
+	background-color: #FF0000;
+	color: #FFFFFF;
+	font-size: 2rem;
+	font-weight: 700;
 }
-#tabla-posiciones tr{
-  background-color: #D9D9D9;
-  border-bottom:solid 1px #aaa;
+#tabla-posiciones td {
+	background-color: #D9D9D9;
+	vertical-align: middle;
 }
-#tabla-posiciones tr: first-child
-#tabla-posiciones tr: last-child{
-  border:none;
+#tabla-posiciones tr {
+	border-bottom: solid 1px #999999;
 }
-#tabla-posiciones td:nth-child(odd){
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
+#tabla-posiciones tr:first-child,
+#tabla-posiciones tr:last-child {
+	border: none;
 }
-#tabla-posiciones td span{
-  color:darkblue;
-  font-weight:600;
+#tabla-posiciones table {
+	width: 60rem;
+	margin: auto;
 }
-
-
+#tabla-posiciones td:nth-of-type(odd) {
+	font-weight: 700;
+	font-size: 2.4rem;
+	text-align: center;
+}
+#tabla-posiciones td:nth-of-type(even) span {
+	font-weight: 700;
+	color: #008899;
+}
+footer {
+	background-color: #333333;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 3rem;
+}
+/* Animaciones CSS */
+@keyframes slider {
+    0% { left: 0 }
+   20% { left: 0 }
+   40% { left: -100vw }
+   60% { left: -100vw }
+   80% { left: -200vw }
+  100% { left: -200vw }
+}
+/* Media Queries */
+@media screen and (max-width: 640px){
+	nav {
+		display: none;
+		float: none;
+		clear: both;
+		text-align: center;
+	}
+	nav ul li {
+		display: block;
+		padding: .5rem;
+	}
+	button {
+		display: block;
+		float: right;
+		border: none;
+		padding: .5rem;
+		font-size: 2rem;
+		line-height: 1;
+		font-weight: 700;
+		color: #FFFFFF;
+		background-color: transparent;
+		cursor: pointer;
+	}
+  button:hover + nav,
+	button:focus + nav {
+		display: block;
+	}
+  #noticias-destacadas h2 {
+    font-size: 1.4rem;
+  }
+	.noticia {
+		flex-direction: column;
+	}
+	.noticia-img,
+	.noticia-txt {
+		width: 100%;
+	}
+  .noticia-txt h3 {
+    font-size: 1.8rem;
+  }
+	#tabla-posiciones table {
+		width: 90%;
+	}
+}
